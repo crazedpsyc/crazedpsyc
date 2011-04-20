@@ -1,0 +1,5 @@
+A List of all the scripts/programs and their descriptions:
+
+* indicator-ipaddr.py
+	- A fast and small indicator applet for Ubuntu to display your current IP Address (As wel as your hostname in the menu)
+

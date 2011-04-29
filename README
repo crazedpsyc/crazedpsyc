@@ -2,4 +2,6 @@ A List of all the scripts/programs and their descriptions:
 
 * indicator-ipaddr.py
 	- A fast and small indicator applet for Ubuntu to display your current IP Address (As wel as your hostname in the menu)
-
+* duck.py
+    - A tiny DOSprompt plugin for using the duckduckgo 0-click API that can also function without DOSprompt
+    - download it, mark it as executable, make sure you have it in the current directory, run './duck.py Search Terms'

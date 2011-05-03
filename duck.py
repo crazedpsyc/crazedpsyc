@@ -43,4 +43,5 @@ class conf: # a quick class to simulate the configuration module for running wit
     
 if __name__ == '__main__':
     import sys, os
+    sys.path += [os.getcwd()]
     main(sys.argv, os.getcwd(), conf)

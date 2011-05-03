@@ -14,7 +14,10 @@ def main(line, ld, conf):
         
         import dostmp
         reload(dostmp)
-        
+        if os.name == 'nt':
+            os.popen('del dostmp.py dostmp.pyc')
+        else:
+            os.system('rm dostmp.py dostmp.pyc')
         resulted = False
         
         if dostmp.data['Definition']: 
@@ -36,6 +39,8 @@ def main(line, ld, conf):
             print 'Related topics:'
             for res in dostmp.data['RelatedTopics']:
                 print res['Text']
+                
+
                 
                 
 class conf: # a quick class to simulate the configuration module for running without DOSprompt

@@ -5,3 +5,5 @@ A List of all the scripts/programs and their descriptions:
 * duck.py
     - A tiny DOSprompt plugin for using the duckduckgo 0-click API that can also function without DOSprompt
     - download it, mark it as executable, make sure you have it in the current directory, run './duck.py Search Terms'
+* steve-bot
+    - An XMPP/Jabber bot named Steve!

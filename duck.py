@@ -17,7 +17,7 @@ def main(line, ld, conf):
         if os.name == 'nt':
             os.popen('del dostmp.py dostmp.pyc')
         else:
-            os.system('rm dostmp.py dostmp.pyc')
+            os.popen('rm dostmp.py dostmp.pyc')
         resulted = False
         
         if dostmp.data['Definition']: 

@@ -11,7 +11,7 @@ import explosions
 version = '0.4'
 admins = ['bazaar', 'crazedpsyc']
 
-class SystemInfoJabberBot(JabberBot):
+class SteveBot(JabberBot):
     saidhito = []
     mefeelings = 'I\'m A bot, so I don\'t have emotions, but if I did I would be fine!\nHow are you?'
     mood = 'emotionless'
@@ -276,11 +276,17 @@ btw, You can type 'version' for my name and rank'''
         comparison = 1e+100 # nothing will *EVER* be more than this :D
         compname = ''
         s = float(s)
+        xo = x * s
         for key in self.explosions.keys():
             comp = self.explosions[key]
-            if x/comp < comparison: 
-                comparison = x/comp
+            print xo/comp, comparison, xo/comp
+            if xo/comp < comparison: 
+                comparison = xo/comp
                 compname = key
+            elif xo/comp > comparison and xo/comp < 1:
+                comparison = xo/comp
+                compname = key
+            
         if comparison == 1e+100: return '%s %sjoules (No suitable comparison found)' % (str(x), whata)
                 
         rcomp = str(round(comparison, 3))
@@ -349,9 +355,9 @@ btw, You can type 'version' for my name and rank'''
         return 'What? Are you talking to me?'
         
         
-username = 'steve@place.im'
+username = 'some@thing.im'
 password = 'password'
-bot = SystemInfoJabberBot(username,password)
+bot = SteveBot(username,password)
 not_running = True
 while not_running:
     not_running = False
